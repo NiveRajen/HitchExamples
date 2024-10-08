@@ -11,7 +11,9 @@ import SwiftUI
 struct HitchesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RenderHitches()
+//            CommitHitches()
+            
         }
     }
 }

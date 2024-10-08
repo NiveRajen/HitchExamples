@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RenderHitches.swift
 //  Hitches
 //
 //  Created by Nivedha Rajendran on 08.10.24.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 //rendering hitch example
-struct ContentView: View {
+struct RenderHitches: View {
     let items = Array(1...1000)
     
     var body: some View {
@@ -37,16 +37,16 @@ struct ItemView: View {
             Text("Item \(item)")
                 .font(.headline)
             //This can cause rendering hitches
-//            Text("Result: \(expensiveComputation(item))")
+            Text("Result: \(expensiveComputation(item))")
             
-            Text("Result: \(result)")
-                .font(.subheadline)
+//            Text("Result: \(result)")
+//                .font(.subheadline)
         }
         .padding()
-        .onAppear() {
-            //Do expensive calculation or loading images on Appear
-            calculateInBackground()
-        }
+//        .onAppear() {
+//            //Do expensive calculation or loading images on Appear
+//            calculateInBackground()
+//        }
     }
     
     func calculateInBackground() {
@@ -73,5 +73,5 @@ struct ItemView: View {
 }
 
 #Preview {
-    ContentView()
+    RenderHitches()
 }
