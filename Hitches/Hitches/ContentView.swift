@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  Hitches
+//
+//  Created by Nivedha Rajendran on 08.10.24.
+//
+
 import SwiftUI
 
 //rendering hitch example
@@ -63,4 +70,8 @@ struct ItemView: View {
         
         return result
     }
+}
+
+#Preview {
+    ContentView()
 }
